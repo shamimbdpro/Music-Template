@@ -1,0 +1,124 @@
+body .right.carousel-control ,
+body .left.carousel-control  {
+	background: none;
+	margin: auto;
+	max-height: 55px;
+}
+body .right.carousel-control i,
+body .left.carousel-control i {
+	font-size: 28px;
+	border: 2px solid #fff;
+	color: #fff;
+	width: 50px;
+	height: 50px;
+	line-height: 45px;
+	box-shadow: 0 0 4px 0px rgba(0,0,0,0.2);
+}
+
+body .carousel-caption {
+	top: 25%;
+	max-width: 90%;
+}
+body .active  img {
+	width: 100%;
+}
+body .active .carousel-caption  h1,
+body .active .carousel-caption  p,
+body .active .carousel-caption  a {
+	position:relative;
+	opacity: 1;
+	bottom: 0;
+}
+body  .carousel-caption  h1,
+body  .carousel-caption  p,
+body  .carousel-caption  a {
+	transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-webkit-transition: all .7s ease;
+	-os-transition: all .5s ease;
+	position:relative;
+	bottom: -100px;
+	opacity: 0;
+}
+body .carousel-caption  h1 {
+	color: #fff;
+	font-size: 48px;
+	padding: 30px 0;
+}
+body .carousel-caption  p {
+	color: #fff;
+	font-size: 18px;
+	padding: 0 0 50px 0;
+	line-height: 26px;
+}
+body .carousel-caption  a:hover {
+	text-decoration: none;
+	background: rgba(0,0,0,.1);
+}
+body .carousel-caption  a {
+	color: #fff;
+	font-size: 14px;
+	padding: 20px 30px;
+	border: 1px solid #fff;
+}
+
+
+
+@media (max-width:1170px){
+
+	body .carousel-caption {
+		top: 10%;
+		max-width: 90%;
+	}
+
+}
+
+@media (max-width:980px){
+	
+	body .carousel-caption  h1 {
+		font-size: 38px;
+		padding: 10px 0;
+	}
+
+}
+
+@media (max-width:700px){
+	
+	body .carousel-caption  h1 {
+		font-size: 32px;
+		padding: 10px 0;
+	}
+	body .carousel-caption  p {
+		font-size: 16px;
+		padding: 0 0 30px 0;
+		line-height: 22px;
+	}
+	body .carousel-caption  a {
+		font-size: 11px;
+		padding: 15px 25px;
+	}
+
+}
+
+@media (max-width:550px){
+
+	body .carousel-caption {
+		top: 0;
+		max-width: 90%;
+	}
+	body .carousel-caption  h1 {
+		color: #fff;
+		font-size: 18px;
+		padding: 10px 0;
+	}
+	body .carousel-caption  p {
+		font-size: 12px;
+		padding: 0 0 25px 0;
+		line-height: 18px;
+	}
+	body .carousel-caption  a {
+		font-size: 11px;
+		padding: 10px 20px;
+	}
+
+}

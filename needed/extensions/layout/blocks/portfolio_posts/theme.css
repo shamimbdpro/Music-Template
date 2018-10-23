@@ -1,0 +1,79 @@
+.portfolio_posts .work{
+    display: block;
+    width: 33.33333333333333%;
+    height: auto;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio_posts .work .media{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.portfolio_posts .work .caption{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0; 
+    left: 0;
+    background: #ffffff;
+    opacity: 0;
+}
+
+
+.portfolio_posts .work a:hover .caption{
+    opacity: 1;
+}
+
+
+.work .caption .work_title{
+    display: block;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    margin-top: -40px;
+}
+
+.portfolio_posts .work .caption h1{
+    position: relative;
+    display: inline-block;
+    max-width: 90%;
+    padding: 20px 0;
+    z-index: 77;
+    color: #454545;
+    font-family: "raleway-regular", arial;
+    font-size: 16px;
+    letter-spacing: .5px;
+    border-bottom: 1px solid #bfbbbb;
+    border-top: 1px solid #bfbbbb;
+}
+
+
+
+
+/*  Responsive code  */
+@media (max-width:1099px){
+
+    .portfolio_posts .work{
+        width: 50%;
+    }
+}
+
+
+@media (max-width:550px){
+     .portfolio_posts  .work{
+        width: 100%;
+    }
+}
+
+.work a .caption
+{
+    transition:all .1s linear;
+    -webkit-transition:all .1s linear;
+    -moz-transition:all .1s linear;
+    -o-transition:all .1s linear;
+}
